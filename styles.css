@@ -38,7 +38,7 @@ nav a:hover {
     height: 50vh;
     width: 90vw;
     box-shadow: 0 0 20px rgba(28, 8, 144, 0.107);
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     position: relative;
     top: -30vh;
@@ -99,24 +99,24 @@ nav a:hover {
 }
 .bg3{
     position: relative;
-    top: -20vh;
+    top: -40vh;
     height: 60vh;
     width: 90vw;
     margin: 0 auto;
     align-items: center;
-    background-color: #222222;
+    /* background-color: #222222; */
     display: flex;
     justify-content: space-evenly;
     border-top-left-radius: 200px;
     border-top-right-radius: 200px;
-    color: white;
+    color: rgb(43, 43, 43);
 }
 .bg3 img {
     border-radius: 10px;
     height: 30vh;
     position: relative;
     animation: animationimg;
-    animation-timeline: view(10px 10px) ;
+    animation-timeline: view(60% auto);
 }
 @keyframes animationimg{
     from 
@@ -128,20 +128,24 @@ nav a:hover {
         opacity: 1;
     }
 }
-
+.bg3 div p {
+    animation: animationText;
+    animation-timeline: view(60% auto);
+    font-size: 20px;
+}
 .bg3p2{
     position: relative;
-    top: -30vh;
+    top: -50vh;
     height: 60vh;
     width: 90vw;
     margin: 0 auto;
     align-items: center;
-    background-color: #222222;
+    /* background-color: #222222; */
     display: flex;
     justify-content: space-around;
     border-bottom-left-radius: 200px;
     border-bottom-right-radius: 200px;
-    color: white;
+    color: rgb(43, 43, 43);
     padding-bottom: 5vh;
 }
 .bg3p2 img {
@@ -149,9 +153,21 @@ nav a:hover {
     height: 50vh;
     position: relative;
     animation: animationimg;
-    animation-timeline: view(20px 20px) ;
+    animation-timeline: view(60% auto) ;
 }
 .bg3p2 p {
     position: relative;
     left: 7vw;
+    animation: animationText;
+    animation-timeline: view(60% auto);
+    font-size: 20px;
+}
+@keyframes animationText {
+    from {
+        opacity: 0;
+        font-size: 1px;
+    } to {
+        opacity: 1;
+        font-size: 20px;
+    }
 }
